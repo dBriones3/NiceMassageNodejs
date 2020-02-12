@@ -9,7 +9,8 @@
 <body>
     <form method="POST" action="/submit-form">
         Hora:<br>
-        <input type="text" id="hour" name="hour" value="00:00">
+        <input id="hour" type="input"  name="hour"
+            min="0:00" max="23:59" required pattern="[0-9]{2}:[0-9]{2}">
         <br>
         Idioma:<br>
         <select id="language" name="language">
