@@ -17,6 +17,7 @@ app.post('/submit-form', (req, res) => {
   //...
   let mesenger;
   mesenger = new Messenger();
+  
   var message = mesenger.getMessageWithHour(hour, language); 
   res.render(path.join(__dirname+'/views/message'), {message:message}); 
 })
